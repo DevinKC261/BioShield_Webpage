@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Green Accent Webpage</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet" />
+</head>
+<style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #e6f4e6;
+      color: #1a3c1a;
+    }
+
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      background-color: #d0eac8;
+      padding: 40px;
+      border: 10px solid #2e8b57;
+      border-radius: 15px;
+    }
+
+    .left {
+      flex: 1;
+      min-width: 300px;
+      padding: 20px;
+    }
+
+    .left h1 {
+      color: #2e8b57;
+      font-size: 2rem;
+      margin-bottom: 20px;
+    }
+
+    .left h2 {
+      color: #1a3c1a;
+      font-size: 1.2rem;
+      font-weight: 600;
+      margin-bottom: 15px;
+    }
+
+    .left p {
+      font-size: 1rem;
+      line-height: 1.6;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 25px;
+      padding: 12px 20px;
+      background-color: #1a3c1a;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 25px;
+      font-weight: bold;
+    }
+
+    .right {
+      flex: 1;
+      min-width: 300px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+    }
+
+    .logo-circle {
+      width: 150px;
+      height: 150px;
+      background-color: #2e8b57;
+      color: white;
+      font-size: 2rem;
+      font-weight: bold;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 50%;
+    }
+
+    /* Decorative elements */
+    .decorative {
+      position: absolute;
+      font-size: 3rem;
+      color: #a0d3a0;
+    }
+
+    .top-left {
+      top: 10px;
+      left: 10px;
+    }
+
+    .bottom-right {
+      bottom: 10px;
+      right: 10px;
+    }
+  </style>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo">Bio Shield</div>
+      <ul class="nav-links">
+        <li><a href="#">New</a></li>
+        <li><a href="#">Men</a></li>
+        <li><a href="#">Women</a></li>
+        <li><a href="#">Kids</a></li>
+        <li><a href="#">Sale</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button class="btn btn-green">Sign In</button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h1>Stay Cool, Stay Clear
+        <br>No Bugs Near!</h1>
+      <p>Your style, your statement. Explore new arrivals and exclusive collections.</p>
+      <button class="btn btn-green btn-large">Shop Now</button>
+    </section>
+  </main>
+  <div class="container">
+    <div class="left">
+      <h1>Enjoy the outdoors more with Bio Shield Insect Repellent</h1>
+      <h2>Discover bite-free bliss with our trusted bug sprays and more.</h2>
+      <p>
+        Bio Shield is a forward‑thinking insect repellent company dedicated to keeping people safe, comfortable, and bug‑bite‑free—all without harsh chemicals. 
+      </p>
+      <a href="#" class="btn">Explore products</a>
+    </div>
+    <div class="right">
+      <img src="Images/Shield logos.png" width="489">
+      <div class="decorative top-left">🌿</div>
+      <div class="decorative bottom-right">🦟</div>
+    </div>
+  </div>
+
+</body>
+</html>
