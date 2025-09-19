@@ -6,6 +6,125 @@
   <title>Bio Shield</title>
   <link rel="stylesheet" href="../styles.css" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --accent: #4ade80;
+      font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      background: linear-gradient(180deg, #ffffff 0%, #ffffff 100%);
+      color: #000000;
+      padding: 40px;
+    }
+
+    .navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #ffffff;
+  z-index: 1000;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+body {
+  padding-top: 70px; /* height of navbar + some spacing */
+}
+
+
+    .logo a {
+      text-decoration: none;
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: #000;
+    }
+
+    .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: #000;
+      font-weight: 500;
+    }
+
+    .nav-links a:hover {
+      color: var(--accent);
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 60px auto;
+      background: rgba(255, 255, 255, 0.05);
+      backdrop-filter: blur(6px);
+      border-radius: 18px;
+      padding: 40px;
+      box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5);
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 24px;
+      font-size: 2rem;
+      font-weight: 700;
+    }
+
+    .info {
+      display: grid;
+      gap: 20px;
+      grid-template-columns: 1fr 1fr;
+    }
+
+    .info div {
+      background: rgba(255, 255, 255, 0.08);
+      border-radius: 12px;
+      padding: 16px;
+    }
+
+    .info h3 {
+      margin: 0 0 8px;
+      font-size: 1.1rem;
+      color: var(--accent);
+    }
+
+    .info p {
+      margin: 0;
+      font-size: 0.95rem;
+    }
+
+    .social {
+      margin-top: 28px;
+      text-align: center;
+    }
+
+    .social a {
+      display: inline-block;
+      margin: 0 10px;
+      font-size: 1rem;
+      color: #fff;
+      background: var(--accent);
+      padding: 10px 16px;
+      border-radius: 30px;
+      text-decoration: none;
+      transition: background 0.2s;
+    }
+
+    .social a:hover {
+      background: #22c55e;
+    }
+
+    @media (max-width: 600px) {
+      .info {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
 </head>
 <body>
   <header>
@@ -21,9 +140,35 @@
   </header>
 
   <main>
-    <section class="hero">
+    <div class="container">
       <h1>Contact Us</h1>
-    </section>
+
+      <section class="info">
+        <div>
+          <h3>Phone</h3>
+          <p>+1 (555) 123-4567</p>
+        </div>
+        <div>
+          <h3>Email</h3>
+          <p>support@bioshield.com</p>
+        </div>
+        <div>
+          <h3>Address</h3>
+          <p>123 Greenway Blvd, Suite 200<br>San Francisco, CA 94103</p>
+        </div>
+        <div>
+          <h3>Working Hours</h3>
+          <p>Mon – Fri: 9am – 6pm<br>Sat: 10am – 3pm</p>
+        </div>
+      </section>
+
+      <div class="social">
+        <a href="#">Facebook</a>
+        <a href="#">Twitter</a>
+        <a href="#">LinkedIn</a>
+        <a href="#">Instagram</a>
+      </div>
+    </div>
   </main>
 </body>
 </html>
