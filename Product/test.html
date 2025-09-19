@@ -1,115 +1,109 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>OFF! Insect Repellent</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Contact Us — BioShield</title>
   <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background-color: #e6f4e6;
-      color: #1a3c1a;
+    :root{
+      --accent: #4ade80;
+      font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
     }
-
-    .container {
-      display: flex;
-      flex-wrap: wrap;
-      background-color: #d0eac8;
-      padding: 40px;
-      border: 10px solid #2e8b57;
-      border-radius: 15px;
+    body{
+      margin:0;
+      min-height:100vh;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      background:linear-gradient(180deg,#ffffff 0%, #ffffff 100%);
+      color:#000000;
+      padding:40px;
     }
-
-    .left {
-      flex: 1;
-      min-width: 300px;
-      padding: 20px;
+    .container{
+      max-width:800px;
+      width:100%;
+      background:rgba(255,255,255,0.05);
+      backdrop-filter:blur(6px);
+      border-radius:18px;
+      padding:40px;
+      box-shadow:0 8px 30px rgba(0,0,0,0.5);
     }
-
-    .left h1 {
-      color: #2e8b57;
-      font-size: 2rem;
-      margin-bottom: 20px;
+    h1{
+      text-align:center;
+      margin-bottom:24px;
+      font-size:2rem;
+      font-weight:700;
     }
-
-    .left h2 {
-      color: #1a3c1a;
-      font-size: 1.2rem;
-      font-weight: 600;
-      margin-bottom: 15px;
+    .info{
+      display:grid;
+      gap:20px;
+      grid-template-columns:1fr 1fr;
     }
-
-    .left p {
-      font-size: 1rem;
-      line-height: 1.6;
+    .info div{
+      background:rgba(255,255,255,0.08);
+      border-radius:12px;
+      padding:16px;
     }
-
-    .btn {
-      display: inline-block;
-      margin-top: 25px;
-      padding: 12px 20px;
-      background-color: #1a3c1a;
-      color: #fff;
-      text-decoration: none;
-      border-radius: 25px;
-      font-weight: bold;
+    .info h3{
+      margin:0 0 8px;
+      font-size:1.1rem;
+      color:var(--accent);
     }
-
-    .right {
-      flex: 1;
-      min-width: 300px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      position: relative;
+    .info p{
+      margin:0;
+      font-size:0.95rem;
     }
-
-    .logo-circle {
-      width: 150px;
-      height: 150px;
-      background-color: #2e8b57;
-      color: white;
-      font-size: 2rem;
-      font-weight: bold;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      border-radius: 50%;
+    .social{
+      margin-top:28px;
+      text-align:center;
     }
-
-    /* Decorative elements */
-    .decorative {
-      position: absolute;
-      font-size: 3rem;
-      color: #a0d3a0;
+    .social a{
+      display:inline-block;
+      margin:0 10px;
+      font-size:1rem;
+      color:#fff;
+      background:var(--accent);
+      padding:10px 16px;
+      border-radius:30px;
+      text-decoration:none;
+      transition:background 0.2s;
     }
-
-    .top-left {
-      top: 10px;
-      left: 10px;
+    .social a:hover{
+      background:#22c55e;
     }
-
-    .bottom-right {
-      bottom: 10px;
-      right: 10px;
+    @media (max-width:600px){
+      .info{ grid-template-columns:1fr; }
     }
   </style>
 </head>
 <body>
   <div class="container">
-    <div class="left">
-      <h1>Enjoy the outdoors more with Bio Shield Insect Repellent</h1>
-      <h2>Discover bite-free bliss with our trusted bug sprays and more.</h2>
-      <p>
-        For over 50 years, OFF!® has made backyards, picnics, and outdoor adventures distraction-free by fending off mosquitoes, ticks, biting flies and more with bug sprays and other solutions for any lifestyle.
-      </p>
-      <a href="#" class="btn">Explore products</a>
-    </div>
-    <div class="right">
-      <div class="logo-circle"></div>
-      <div class="decorative top-left">🌿</div>
-      <div class="decorative bottom-right">🦟</div>
+    <h1>Contact Us</h1>
+
+    <section class="info">
+      <div>
+        <h3>Phone</h3>
+        <p>+1 (555) 123-4567</p>
+      </div>
+      <div>
+        <h3>Email</h3>
+        <p>support@bioshield.com</p>
+      </div>
+      <div>
+        <h3>Address</h3>
+        <p>123 Greenway Blvd, Suite 200<br>San Francisco, CA 94103</p>
+      </div>
+      <div>
+        <h3>Working Hours</h3>
+        <p>Mon – Fri: 9am – 6pm<br>Sat: 10am – 3pm</p>
+      </div>
+    </section>
+
+    <div class="social">
+      <a href="#">Facebook</a>
+      <a href="#">Twitter</a>
+      <a href="#">LinkedIn</a>
+      <a href="#">Instagram</a>
     </div>
   </div>
 </body>

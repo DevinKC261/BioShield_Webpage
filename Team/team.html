@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Our Team — BioShield</title>
+  <style>
+    :root{
+      --card-w: 320px;
+      --accent-1: #6EE7B7;
+      --accent-2: #7DD3FC;
+      --accent-3: #FDBA74;
+      --glass: rgba(255,255,255,0.7);
+      font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+    }
+    body{
+      margin:0;
+      min-height:100vh;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      gap:24px;
+      background: radial-gradient(circle at 10% 10%, rgba(255,255,255,0.04), transparent 10%),
+                  radial-gradient(circle at 90% 80%, rgba(255,255,255,0.03), transparent 12%),
+                  linear-gradient(180deg,#0f172a 0%, #071033 100%);
+      color: #0b1220;
+      padding:40px;
+    }
+    .team-wrap{
+      display:flex;
+      gap:20px;
+      flex-wrap:wrap;
+      max-width:1100px;
+      justify-content:center;
+    }
+    .card{
+      width:var(--card-w);
+      border-radius:18px;
+      overflow:hidden;
+      box-shadow:0 8px 30px rgba(2,6,23,0.6);
+      position:relative;
+      transform:translateZ(0);
+      background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+      backdrop-filter: blur(6px) saturate(120%);
+    }
+    /* fake background area */
+    .bg-stage{
+      height:170px;
+      position:relative;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      overflow:hidden;
+    }
+    /* three different stylistic backgrounds */
+    .bg-stage.one{ background: linear-gradient(135deg, rgba(34,197,94,0.85), rgba(6,95,70,0.85)); }
+    .bg-stage.two{ background: linear-gradient(135deg, rgba(59,130,246,0.9), rgba(7,43,124,0.85)); }
+    .bg-stage.three{ background: linear-gradient(135deg, rgba(250,204,21,0.9), rgba(244,114,182,0.85)); }
+    /* decorative soft circles for bokeh */
+    .bg-stage::before,
+    .bg-stage::after{
+      content:"";
+      position:absolute;
+      border-radius:50%;
+      opacity:0.12;
+      filter: blur(24px);
+    }
+    .bg-stage::before{ width:220px; height:220px; right:10%; top:-30%; }
+    .bg-stage::after{ width:120px; height:120px; left:-10%; bottom:-20%; }
+
+    .portrait{
+      width:120px;
+      height:120px;
+      border-radius:50%;
+      object-fit:cover;
+      border:8px solid rgba(255,255,255,0.9);
+      box-shadow:0 6px 20px rgba(2,6,23,0.5);
+      transform:translateY(30px);
+      background:#fff;
+    }
+
+    .card-body{ padding:28px 20px 36px; text-align:center; }
+    .name{ font-weight:700; font-size:1.05rem; margin:10px 0 6px; color: #fff; }
+    .role{ font-size:0.9rem; color: rgba(255,255,255,0.85); margin-bottom:8px; }
+    .meta{ font-size:0.85rem; color: rgba(255,255,255,0.75); }
+    .tag{ display:inline-block; padding:6px 10px; border-radius:999px; margin-top:12px; font-size:0.78rem; background: rgba(255,255,255,0.12); color:#fff; }
+
+    /* small responsive */
+    @media (max-width:720px){
+      body{ padding:20px; }
+      .team-wrap{ gap:16px; }
+      .card{ width:100%; max-width:380px; }
+    }
+
+  </style>
+</head>
+<body>
+  <main>
+    <h1 style="text-align:center;color:rgba(255,255,255,0.95);margin-bottom:18px;">Meet our team</h1>
+
+    <section class="team-wrap">
+
+      <!-- Member 1 -->
+      <article class="card">
+        <div class="bg-stage one">
+          <!-- Portrait sits on top of the fake background -->
+          <img class="portrait" src="/mnt/data/images (4).jpg" alt="Member 1">
+        </div>
+        <div class="card-body">
+          <div class="name">Bruno Hidalgo</div>
+          <div class="role">Product Manager</div>
+          <div class="meta">Full-time employee • BioShield</div>
+          <div class="tag">Expert: Branding</div>
+        </div>
+      </article>
+
+      <!-- Member 2 -->
+      <article class="card">
+        <div class="bg-stage two">
+          <img class="portrait" src="/mnt/data/download (1).jpg" alt="Member 2">
+        </div>
+        <div class="card-body">
+          <div class="name">Carlos M.</div>
+          <div class="role">Lead Engineer</div>
+          <div class="meta">Full-time employee • BioShield</div>
+          <div class="tag">Expert: Systems</div>
+        </div>
+      </article>
+
+      <!-- Member 3 -->
+      <article class="card">
+        <div class="bg-stage three">
+          <img class="portrait" src="/mnt/data/images (3).jpg" alt="Member 3">
+        </div>
+        <div class="card-body">
+          <div class="name">Isabella R.</div>
+          <div class="role">Operations</div>
+          <div class="meta">Full-time employee • BioShield</div>
+          <div class="tag">Expert: Logistics</div>
+        </div>
+      </article>
+
+    </section>
+  </main>
+
+  <!-- Simple note for local preview -->
+  <!-- To preview: save this file as team_profile.html and open in a browser. If the photos live in /mnt/data, update the src attributes or move the images next to the HTML file. -->
+</body>
+</html>
