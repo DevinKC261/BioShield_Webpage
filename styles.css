@@ -4,6 +4,14 @@
     margin: 0;
     padding: 0;
   }
+
+    .BG1 {
+  background-image: url(Images/Family\ Camping.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 2000px 1500px;
+  background-attachment: fixed;
+}
   
   body {
     font-family: 'Inter', sans-serif;
@@ -20,20 +28,32 @@
   header {
     border-bottom: 1px solid #ddd;
   }
+
+  /*The top Navigation Bar*/
   
   .navbar {
-    max-width: 1200px;
+    overflow: auto;
+    background-color: #ffffff;
     margin: 0 auto;
     padding: 1rem 2rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    
   }
   
   .logo {
+    
     font-weight: 700;
     font-size: 1.5rem;
     color: #111;
+  }
+
+  .HomeBtn {
+    background-image: url(Images/Shield\ logos.png);
+    background-repeat: no-repeat;
+    background-color: white;
+    background-origin: content-box;
   }
   
   .nav-links {
@@ -64,6 +84,18 @@
   }
   
   /* Buttons */
+
+  .Shp-Btn {
+    display: inline block;
+    font-size: 1.25rem;
+    padding: 0.75rem 2rem;
+    margin-top: 25px;
+    border-radius: 25px;
+    background-color: #2a7a2a;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+  }
   .btn-green {
     background-color: #37a837; /* green */
     color: white;
@@ -71,6 +103,12 @@
   
   .btn-green:hover {
     background-color: #2a7a2a;
+  }
+
+    .btn-large {
+    font-size: 1.25rem;
+    padding: 0.75rem 2rem;
+    border-radius: 6px;
   }
   
   /* Hero section */
@@ -85,18 +123,25 @@
     font-size: 3rem;
     font-weight: 700;
     margin-bottom: 1rem;
-    color: #111;
+    color: #000000;
   }
   
   .hero p {
     font-size: 1.25rem;
     margin-bottom: 2rem;
-    color: #444;
+    color: #ffffff;
   }
   
-  .btn-large {
-    font-size: 1.25rem;
-    padding: 0.75rem 2rem;
-    border-radius: 6px;
+
+  main > section {
+    color: #111;
   }
-  
+
+  .container {
+      display: flex;
+      flex-wrap: wrap;
+      background-color: #d0eac8;
+      padding: 40px;
+      border: 10px solid #2e8b57;
+      border-radius: 75px;
+    }
