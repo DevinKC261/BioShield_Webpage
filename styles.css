@@ -4,7 +4,7 @@
     margin: 0;
     padding: 0;
   }
-
+/* Background images and the Background*/
     .BG1 {
   background-image: url(Images/Family\ Camping.jpg);
   background-repeat: no-repeat;
@@ -19,31 +19,32 @@
     color: #111;
     line-height: 1.6;
   }
-  
-  a {
-    text-decoration: none;
-    color: inherit;
-  }
-  
-  header {
-    border-bottom: 1px solid #ddd;
-  }
+
 
   /*The top Navigation Bar*/
   
   .navbar {
     overflow: auto;
+    font-family: 'inter', sans-serif;
     background-color: #ffffff;
     margin: 0 auto;
     padding: 1rem 2rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    
   }
-  
-  .logo {
     
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+    
+  header {
+    border-bottom: 1px solid #ddd;
+  }
+
+  
+  .logo { 
     font-weight: 700;
     font-size: 1.5rem;
     color: #111;
@@ -112,15 +113,16 @@
   }
   
   /* Hero section */
+
   .hero {
-    max-width: 700px;
-    margin: 4rem auto;
-    padding: 0 1rem;
+    max-width: 500px;
+    margin: 3em auto;
+    padding: 3rem;
     text-align: center;
   }
   
   .hero h1 {
-    font-size: 3rem;
+    font-size: 2.25rem;
     font-weight: 700;
     margin-bottom: 1rem;
     color: #000000;
@@ -132,16 +134,23 @@
     color: #ffffff;
   }
   
-
-  main > section {
-    color: #111;
-  }
-
   .container {
       display: flex;
       flex-wrap: wrap;
       background-color: #d0eac8;
-      padding: 40px;
-      border: 10px solid #2e8b57;
+      background-position: center;
+      padding: 30px;
+      border: 5px solid #2e8b57;
       border-radius: 75px;
+      max-width: 1350px;
+      text-align: left;
+    }
+
+    /* The bottom text and links*/
+
+    .bg2 {
+      background-color:#2e8b57;
+      background-repeat: no-repeat;
+      background-position: bottom;
+      border: 5px solid #2a7a2a;
     }
