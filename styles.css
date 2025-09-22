@@ -55,6 +55,7 @@
     background-repeat: no-repeat;
     background-color: white;
     background-origin: content-box;
+    padding: 1rem;
   }
   
   .nav-links {
@@ -117,7 +118,7 @@
   .hero {
     max-width: 500px;
     margin: 3em auto;
-    padding: 3rem;
+    padding: 0rem;
     text-align: center;
   }
   
@@ -125,15 +126,33 @@
     font-size: 2.25rem;
     font-weight: 700;
     margin-bottom: 1rem;
+    padding: 2rem;
     color: #000000;
+    text-align: center;
+  }
+
+    .hero2 h2 {
+    font-size: 2.25rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    padding: 2rem;
+    color: #000000;
+    text-align: center;
   }
   
   .hero p {
     font-size: 1.25rem;
-    margin-bottom: 2rem;
-    color: #ffffff;
+    margin-bottom: 1rem;
+    color: #000000;
+    text-align: center;
   }
   
+    .hero2 p {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+    color: #000000;
+    text-align: center;
+  }
   .container {
       display: flex;
       flex-wrap: wrap;
@@ -144,6 +163,7 @@
       border-radius: 75px;
       max-width: 1350px;
       text-align: left;
+      margin: 4rem;
     }
 
     /* The bottom text and links*/
@@ -152,5 +172,49 @@
       background-color:#2e8b57;
       background-repeat: no-repeat;
       background-position: bottom;
+      padding: 3rem;
+      text-decoration: none;
+      padding: 2rem;
+    }
+
+    .BtmLinks {
+      color: #fff;
+      font-size: 1rem;
+      text-decoration: none;
+      text-align: left;
+    }
+
+    .BtmLinks a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .BtmLinks h3 {
+      font-family: arial, sans-serif;
+    }
+
+    /* Image contaniers*/
+
+    .Imgcontanier1 {
+      display: flex;
+      flex-wrap: wrap;
+      background-color: #ffffff;
+      background-position: left;
+      background-repeat: no-repeat;
+      background-size: 100px;
+      padding-left: 1rem;
       border: 5px solid #2a7a2a;
+      border-radius: 75px;
+      margin: 2rem;
+    }
+
+    .Imgcontanier1 img {
+      padding: 1rem;
+      margin: 2rem;
+    }
+
+    .Imgcontanier1 h2 {
+      text-align: center;
+      padding: 1rem;
+      margin: 2rem;
     }
