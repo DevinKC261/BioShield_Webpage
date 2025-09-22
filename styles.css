@@ -20,7 +20,6 @@
     line-height: 1.6;
   }
 
-
   /*The top Navigation Bar*/
   
   .navbar {
@@ -143,15 +142,16 @@
   .hero p {
     font-size: 1.25rem;
     margin-bottom: 1rem;
-    color: #000000;
+    color: #ffffff;
     text-align: center;
   }
   
     .hero2 p {
     font-size: 1.25rem;
-    margin-bottom: 1rem;
+    margin-left: 1rem;
+    padding-left: 2rem;
     color: #000000;
-    text-align: center;
+    text-align: right;
   }
   .container {
       display: flex;
@@ -199,7 +199,20 @@
       display: flex;
       flex-wrap: wrap;
       background-color: #ffffff;
-      background-position: left;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: 100px;
+      padding-left: 1rem;
+      border: 5px solid #2a7a2a;
+      border-radius: 75px;
+      margin: 2rem;
+    }
+    
+    .Imgcontanier2 {
+      display: flex;
+      flex-wrap: wrap;
+      background-color: #ffffff;
+      background-position: right;
       background-repeat: no-repeat;
       background-size: 100px;
       padding-left: 1rem;
@@ -211,10 +224,16 @@
     .Imgcontanier1 img {
       padding: 1rem;
       margin: 2rem;
+      border: 5px solid #2a7a2a;
+      border-radius: 2rem;
+      background-color: rgb(202, 202, 202);
+      background-position: left;
     }
 
-    .Imgcontanier1 h2 {
-      text-align: center;
+    .Imgcontanier2 img {
       padding: 1rem;
       margin: 2rem;
+      border: 5px solid #2a7a2a;
+      border-radius: 2rem;
+      background-color: rgb(202, 202, 202);
     }
