@@ -1,19 +1,10 @@
-/* Reset & basics */
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
   }
-/* Background images and the Background*/
-    .BG1 {
-  background-image: url(Images/Family\ Camping.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 2000px 1500px;
-  background-attachment: fixed;
-}
-  
-  body {
+
+body {
     font-family: 'Inter', sans-serif;
     background-color: #fff;
     color: #111;
@@ -57,7 +48,7 @@
   
   .nav-links a {
     font-weight: 500;
-    font-size: 1.05rem;
+    font-size: 1rem;
     color: #111;
     transition: color 0.3s ease;
   }
@@ -104,56 +95,56 @@
     padding: 0.75rem 2rem;
     border-radius: 6px;
   }
+  
+  /* Aligned Text */
 
-  .btn {
-    background-color: #2a7a2a;
+.wrapper {
+    width: 100%;
+    margin: auto;
+    margin-top: 3rem;
+    margin-bottom: 4rem;
+    padding: 1.5rem;
+    background-color: #ddd;
+    border-radius: 4rem;
+    justify-content: center;
+    border :5px solid #2a7a2a;
+    justify-content: center;
+}
+
+.Tent {
+    width: 400px;
+    float: left;
+    margin: 1rem;
+    border-radius: 1.25rem;
+}
+
+p {
     padding: 1rem;
     margin: 2rem;
-    border-radius: 2rem;
-    border: 2px solid #000000;
-    color: #fff;
     font-size: 1.25rem;
-  }
-  
-  /* Hero section */
-
-  .hero {
-    max-width: 500px;
-    margin: 3rem auto;
-    padding: 0rem;
     text-align: center;
-  }
-  
-  .hero h1 {
-    font-size: 2.25rem;
-    font-weight: 700;
+}
+
+h1 {
+    padding: 1rem;
     margin: 1rem;
-    padding: 2rem;
-    color: #000000;
     text-align: center;
-  }
+}
 
-   .hero p {
-    font-size: 1.5rem;
-    margin: 2rem;
-    color: #ffffff;
+.Old {
+    width: 400px;
+    float: right;
+    margin: 1rem;
+    border-radius: 1.25rem;
+}
+
+h2 {
+    padding: 1rem;
+    margin: 1rem;
     text-align: center;
-  }
+}
 
-  .container {
-      display: flex;
-      flex-wrap: wrap;
-      background-color: #d0eac8;
-      background-position: center;
-      padding: 30px;
-      border: 5px solid #2e8b57;
-      border-radius: 75px;
-      max-width: 1350px;
-      text-align: left;
-      margin: 4rem;
-    }
-
-    /* The bottom text and links*/
+/* Footer */
 
     .bg2 {
       background-color:#2e8b57;
@@ -161,7 +152,6 @@
       background-position: bottom;
       padding: 3rem;
       text-decoration: none;
-      padding: 2rem;
     }
 
     .BtmLinks {
